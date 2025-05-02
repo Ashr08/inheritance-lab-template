@@ -3,6 +3,10 @@ public class Person{
   private int myAge;       // person's age
   private String myGender; // "M" for male, "F" for female
 
+  //Constructors are used only when the object is first created.
+
+  //Setters allow changing values later, and getters allow reading them at any time.
+
   // constructor
   public Person(String name, int age, String gender){
     myName = name;
