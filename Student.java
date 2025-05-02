@@ -34,3 +34,30 @@ public class Student extends Person{
     return super.toString() + ", student id: " + myIdNum + ", gpa: " + myGPA;
   }
 }
+
+
+public class CollegeStudent extends Student(){
+  private int year;
+  private String major; 
+
+
+  public CollegeStudent(String name, int age, String gender, String idNum, double gpa, int year, String major){
+    super(name, age, gender, idNum, gpa);
+
+    this.year = year;
+    this.major = major;
+  }
+
+  public void getYear(){
+    this.year = year;
+  }
+  
+  public void getMajor(){
+
+  }
+
+  public int setYear(){
+    return year; 
+  }
+
+}
