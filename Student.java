@@ -49,15 +49,23 @@ public class CollegeStudent extends Student(){
   }
 
   public void getYear(){
-    this.year = year;
+    return year;
   }
   
   public void getMajor(){
-
+    return major; 
   }
 
   public int setYear(){
-    return year; 
+    this.year = year; 
+  }
+
+  public String setMajor(){
+    this.major = major; 
+  }
+
+  public String toString(){
+    return super.toString() + ", year: " + year + ", major: " + major + "is a CollegeStudent!";
   }
 
 }
